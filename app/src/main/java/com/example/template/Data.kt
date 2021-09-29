@@ -1,4 +1,4 @@
-package com.example.spinexample
+package com.example.template
 
 import java.io.Serializable
 

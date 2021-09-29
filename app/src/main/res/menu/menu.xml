@@ -13,4 +13,20 @@
         android:title="Setting"
         app:showAsAction="withText" />
 
+    <item
+        android:id="@+id/easy"
+        android:title="Difficulty level: Easy"
+        app:showAsAction="withText"/>
+
+    <item
+        android:id="@+id/middle"
+        android:title="Difficulty level: Middle"
+        app:showAsAction="withText"/>
+
+    <item
+        android:id="@+id/hard"
+        android:title="Difficulty level: Hard"
+        app:showAsAction="withText"/>
+
+
 </menu>

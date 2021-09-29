@@ -14,12 +14,13 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
+            android:id="@+id/toolbar12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:title=" "></androidx.appcompat.widget.Toolbar>
+            app:title=" ">
+        </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
     <ImageView
@@ -39,7 +40,7 @@
         android:id="@+id/ramka"
         android:layout_width="350dp"
         android:layout_height="250dp"
-        app:layout_constraintBottom_toBottomOf="@+id/bakgraund"
+        app:layout_constraintBottom_toBottomOf="@id/bakgraund"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -56,7 +57,7 @@
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ramka"
+        app:layout_constraintTop_toBottomOf="@id/ramka"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/bet"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -70,7 +71,7 @@
         android:onClick="onClick1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ramka"
+        app:layout_constraintTop_toBottomOf="@id/ramka"
         app:layout_constraintVertical_bias="0.993"
         app:srcCompat="@drawable/spin"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -84,8 +85,8 @@
         android:text="1"
         android:textColor="@color/white"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/bet"
-        app:layout_constraintEnd_toEndOf="@+id/bet"
+        app:layout_constraintBottom_toBottomOf="@id/bet"
+        app:layout_constraintEnd_toEndOf="@id/bet"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -110,22 +111,23 @@
         android:textColor="@color/white"
         android:textSize="30dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/gold"
-        app:layout_constraintEnd_toEndOf="@+id/gold"
+        app:layout_constraintBottom_toBottomOf="@id/gold"
+        app:layout_constraintEnd_toEndOf="@id/gold"
         app:layout_constraintHorizontal_bias="0.805"
-        app:layout_constraintStart_toStartOf="@+id/gold"
+        app:layout_constraintStart_toStartOf="@id/gold"
         tools:text="1000" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="230dp"
         android:layout_height="140dp"
-        app:layout_constraintBottom_toBottomOf="@+id/ramka"
-        app:layout_constraintEnd_toEndOf="@+id/ramka"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="@+id/ramka"
+        android:layout_marginStart="8dp"
         android:nestedScrollingEnabled="false"
-        app:layout_constraintTop_toTopOf="@+id/ramka"
+        app:layout_constraintBottom_toBottomOf="@id/ramka"
+        app:layout_constraintEnd_toEndOf="@id/ramka"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@id/ramka"
+        app:layout_constraintTop_toTopOf="@id/ramka"
         app:layout_constraintVertical_bias="0.509"
         tools:ignore="MissingConstraints" />
 
@@ -138,9 +140,9 @@
         android:backgroundTint="#00000000"
         android:elevation="0dp"
         android:stateListAnimator="@null"
-        app:layout_constraintBottom_toBottomOf="@+id/bet"
+        app:layout_constraintBottom_toBottomOf="@id/bet"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/plus"
+        app:layout_constraintTop_toTopOf="@id/plus"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -152,9 +154,9 @@
         android:onClick="onClick1"
         android:elevation="0dp"
         android:stateListAnimator="@null"
-        app:layout_constraintBottom_toBottomOf="@+id/bet"
-        app:layout_constraintEnd_toEndOf="@+id/bet"
-        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toBottomOf="@id/bet"
+        app:layout_constraintEnd_toEndOf="@id/bet"
+        app:layout_constraintTop_toTopOf="@id/textView"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
@@ -185,8 +187,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="220dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/appBarLayout"
-        app:layout_constraintStart_toEndOf="@+id/gold"
+        app:layout_constraintEnd_toEndOf="@id/appBarLayout"
+        app:layout_constraintStart_toEndOf="@id/gold"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_more_vert_24" />
 

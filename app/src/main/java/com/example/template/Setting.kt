@@ -1,21 +1,14 @@
-package com.example.spinexample
+package com.example.template
 
 import Adapter3
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.StrictMode
-import android.util.Log
-import android.view.ContextMenu
-import android.view.MenuItem
 import android.view.View
-import android.view.ViewGroup
 import android.widget.*
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.viewpager2.widget.ViewPager2
-import com.example.spinexample.databinding.ActivitySettingBinding
 
 class Setting : AppCompatActivity(), Adapter3.OnItemClickListener {
     lateinit var viewPager: RecyclerView
@@ -55,15 +48,25 @@ class Setting : AppCompatActivity(), Adapter3.OnItemClickListener {
     override fun onItemClick(position: Int, list: List<Data>, view: View) {
         val intent = Intent(this, MainActivity::class.java)
         val text = editText.text.toString()
-        intent.putExtra("userName", text)
-        intent.putExtra("icon", list[position].icon)
         if (text.isNotEmpty()){
-            editText.hint = text
+            save(text, "username")
+            save(list[position].icon.toString(), "icon")
+        }
+        else{
+            save(list[position].icon.toString(), "icon")
         }
         startActivity(intent)
     }
     fun onClick(view: View){
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
+    }
+
+    fun save(value: String, key: String) {
+        val sharedPreferences = getSharedPreferences("shared", Context.MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        editor.apply {
+            putString(key, value)
+        }.apply()
     }
 }

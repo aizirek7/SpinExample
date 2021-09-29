@@ -1,13 +1,11 @@
 import android.content.Context
 import android.util.Log
 import android.view.*
-import android.widget.Button
 import android.widget.ImageButton
-import android.widget.Toast
+import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.spinexample.Data
-import com.example.spinexample.R
-import com.example.spinexample.databinding.ItemUserBinding
+import com.example.template.Data
+import com.example.template.R
 
 class Adapter3(
     private val gold: List<Data>,
@@ -15,25 +13,28 @@ class Adapter3(
     val context: Context,
 ) : RecyclerView.Adapter<Adapter3.Holder>() {
 
-    inner class Holder(val binding: ItemUserBinding) : RecyclerView.ViewHolder(binding.root),
-        View.OnClickListener {
+    inner class Holder(view: View) : RecyclerView.ViewHolder(view), View.OnClickListener {
+        val imageButton = view.findViewById<ImageButton>(R.id.imageButton)
+        val userIcon = view.findViewById<ImageView>(R.id.userIcon)
+
+
+
         init {
-            binding.imageButton.setOnClickListener(this)
+           imageButton.setOnClickListener(this)
         }
 
 
         override fun onClick(v: View?) {
-            if (v == binding.imageButton) {
+            if (v == imageButton) {
                 Log.i("TAG", "image")
-                listener.onItemClick(adapterPosition, gold, binding.userIcon)
+                listener.onItemClick(adapterPosition, gold, userIcon)
             }
         }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
-        val binding = ItemUserBinding.inflate(LayoutInflater.from(parent.context))
-        val holder = Holder(binding)
-        return holder
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_user, parent, false)
+        return Holder(view)
     }
 
     override fun getItemCount(): Int {
@@ -41,7 +42,7 @@ class Adapter3(
     }
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
-        holder.binding.userIcon.setImageResource(gold[position].icon)
+        holder.userIcon.setImageResource(gold[position].icon)
     }
 
     interface OnItemClickListener {

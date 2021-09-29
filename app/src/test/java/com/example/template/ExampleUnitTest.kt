@@ -1,4 +1,4 @@
-package com.example.spinexample
+package com.example.template
 
 import org.junit.Test
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.spinexample">
+    package="com.template">
 
     <application
         android:allowBackup="true"
@@ -10,17 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SpinExample">
         <activity
-            android:name=".Setting"
-            android:parentActivityName=".MainActivity"
+            android:name="com.example.template.Setting"
+            android:parentActivityName="com.example.template.MainActivity"
             android:exported="true"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".Record"
-            android:parentActivityName=".MainActivity"
+            android:name="com.example.template.Record"
+            android:parentActivityName="com.example.template.MainActivity"
             android:exported="true"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".SplashActivity"
+            android:name="com.example.template.SplashActivity"
             android:exported="true"
             android:screenOrientation="landscape">
             <intent-filter>
@@ -30,7 +30,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.template.MainActivity"
             android:exported="true"
             android:screenOrientation="landscape" />
     </application>
