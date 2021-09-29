@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/SpinExample/app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.2203125" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SpinExample/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SpinExample/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SpinExample/app/src/main/res/layout/activity_main2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SpinExample/app/src/main/res/layout/activity_record.xml" value="0.192481884057971" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SpinExample/app/src/main/res/layout/activity_setting.xml" value="0.18840579710144928" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SpinExample/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SpinExample/app/src/main/res/layout/animation.xml" value="0.19746376811594202" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SpinExample/app/src/main/res/layout/dcmkd.xml" value="0.19655797101449277" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SpinExample/app/src/main/res/layout/item.xml" value="0.67" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SpinExample/app/src/main/res/layout/item_user.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SpinExample/app/src/main/res/layout/record.xml" value="0.192481884057971" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SpinExample/app/src/main/res/layout/record_item.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SpinExample/app/src/main/res/layout/toolbar.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SpinExample/app/src/main/res/menu/context_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SpinExample/app/src/main/res/menu/menu.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
